@@ -19,5 +19,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "embla-carousel-autoplay": "^8.5.2"
+  }
 }

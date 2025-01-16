@@ -1,14 +1,11 @@
-import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
-import Hero from "@/components/home/Hero";
-
-
+import { BestSeller, Categories, Hero } from "@/components/home";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <Categories />
+      <BestSeller />
     </main>
   );
 }

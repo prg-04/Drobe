@@ -42,4 +42,80 @@ model Address {
   @@map("addresses")
 }
 
+model Products {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  code String
+  name String
+  stock Json
+  price Json
+  images Json
+  categories Json
+  pk String
+  whitePrice Json
+  articles Json
+  visible Boolean
+  numberOfPieces Int?
+  defaultArticle Json
+  sale Boolean
+  variantSizes Json
+  swatches Json
+  articleCodes Json
+  ticket String
+  searchEngineProductId String
+  dummy Boolean
+  linkPdp String
+  categoryName String
+  rgbColors Json
+  articleColorNames Json?
+  ecoTaxValue Int
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
 
+  @@map("products")
+}
+
+model ProductDetails {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  code String
+  name String
+  description String
+  sapProductName String
+  sellingAttributes Json
+  color Json
+  whitePrice Json
+  redPrice Json
+  priceType String
+  measurements Json
+  assortmentsTypeKey String
+  lengthCollection Json
+  showPriceMarker Boolean
+  sapSalesMode String
+  baseProductCode String
+  ancestorProductCode String
+  mainCategory Json
+  dynamicHeader String
+  supercategories Json
+  constructionDescr String
+  customerGroup String
+  functions Json
+  newArrival Boolean
+  articlesList Json
+  inStock Boolean
+  productUrl String
+  swatchesType String
+  rootCategoryPath String
+  productFeature Json
+  productKey String
+  productCountryOfProduction String
+  showGarmentsInfo Boolean
+  yearOfProduction String
+  complianceMakers Json
+  styleCollection Json
+  presentationTypes String
+  presentationTypesCode String
+  multipack Boolean
+  newProduct Boolean
+
+  @@map("product_details")
+  
+}

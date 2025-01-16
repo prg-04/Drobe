@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
- darkMode: ["class"],
+  darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     extend: {
@@ -48,5 +49,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
-
+};

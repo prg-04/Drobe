@@ -91,3 +91,31 @@ export const hero = [
     image: "/hero-6.jpg",
   },
 ];
+
+export const categories = [
+  {
+    title: "Men's Collection",
+    href: "/shop/men",
+    image: "/men.jpg",
+  },
+  {
+    title: "Women's Collection",
+    href: "/shop/women",
+    image: "/women.jpg",
+  },
+  {
+    title: "Kids Collection",
+    href: "/shop/kids",
+    image: "/Kids.jpg",
+  },
+  {
+    title: "Footwear",
+    href: "/shop/footwear",
+    image: "/footwaer.jpg",
+  },
+  {
+    title: "Accessories",
+    href: "/shop/accessories",
+    image: "/accesories.jpg",
+  },
+];
