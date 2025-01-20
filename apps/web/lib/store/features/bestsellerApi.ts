@@ -4,8 +4,11 @@ export interface BestSeller {
   id: string;
   title: string;
   description: string;
-  price: number;
-  images: { url: string }[];
+  price: {
+    value: number;
+    formattedValue: string;
+  };
+  images: { url: string; baseUrl: string }[];
   category: string;
   createdAt: string;
   updatedAt: string;

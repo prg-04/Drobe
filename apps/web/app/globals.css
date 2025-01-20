@@ -76,7 +76,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--foreground);
 }
 
 * {
@@ -165,4 +165,16 @@ a {
 .animating-out {
   position: absolute;
   opacity: 0;
+}
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
 }

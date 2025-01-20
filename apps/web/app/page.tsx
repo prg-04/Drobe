@@ -1,4 +1,11 @@
-import { BestSeller, Categories, Hero } from "@/components/home";
+import {
+  BestSeller,
+  Categories,
+  Deals,
+  Hero,
+  InstaStories,
+  Testimonial,
+} from "@/components/home";
 
 export default function Home() {
   return (
@@ -6,6 +13,9 @@ export default function Home() {
       <Hero />
       <Categories />
       <BestSeller />
+      <Deals />
+      <Testimonial />
+      <InstaStories />
     </main>
   );
 }

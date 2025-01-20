@@ -18,20 +18,20 @@ export function CategoriesCarousel() {
   );
 
   return (
-    <div className="w-full max-w-full mt-10 ml-4 ">
+    <div className="w-full max-w-full mt-10 ml-2 px-4">
       <div className="w-full max-w-full ">
-        <h3 className="text-2xl font-bold">Shop by Categories</h3>
+        <h3 className="text-2xl font-bold text-black">Shop by Categories</h3>
       </div>
       <Carousel
         plugins={[plugin.current]}
         className="w-full max-w-full h-full mt-4"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}>
-        <CarouselContent>
+        <CarouselContent >
           {categories.map((category, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card>
+                <Card className="h-[500px] w-[350px]">
                   <CardContent className="relative aspect-square overflow-hidden h-full w-full ">
                     <img
                       src={category.image}
