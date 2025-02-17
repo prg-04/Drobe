@@ -5,9 +5,7 @@ import anime from "animejs";
 import React, { useEffect, useState, useRef } from "react";
 import { Button } from "../ui/button";
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const hasInitialized = useRef(false);
@@ -119,7 +117,7 @@ const Hero = (props: Props) => {
   }, [activeIndex]);
 
   return (
-    <section className="relative overflow-hidden w-full h-screen">
+    <section className="relative overflow-hidden w-full h-[60vh]">
       {hero.map((item, index) => (
         <div
           key={item.title}

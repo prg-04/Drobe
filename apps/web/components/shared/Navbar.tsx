@@ -92,7 +92,7 @@ const Navbar = () => {
                                       <li key={subItem}>
                                         <Link
                                           href={subItemHref}
-                                          className="block text-sm text-muted-foreground hover:text-accent-foreground hover:underline">
+                                          className="block text-sm text-accent-foreground hover:text-accent-foreground hover:underline">
                                           {subItem}
                                         </Link>
                                       </li>

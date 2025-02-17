@@ -6,6 +6,7 @@ import {
   InstaStories,
   Testimonial,
 } from "@/components/home";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Deals />
       <Testimonial />
       <InstaStories />
+      <Footer />
     </main>
   );
 }

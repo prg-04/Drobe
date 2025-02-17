@@ -119,3 +119,68 @@ export const categories = [
     image: "/accesories.jpg",
   },
 ];
+
+export const stories = [
+  {
+    title: "Summer Collection",
+    src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80",
+  },
+  {
+    title: "Street Style",
+    src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80",
+  },
+  {
+    title: "Autumn Vibes",
+    src: "https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&q=80",
+  },
+  {
+    title: "Casual Wear",
+    src: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80",
+  },
+];
+
+export const shopCategories = [
+  {
+    name: "Women",
+    subCategories: ["Kurta & Shirts", "Dress", "Jackets"],
+  },
+  {
+    name: "Men",
+    subCategories: [
+      "T-shirts",
+      "Casual Shirts",
+      "Formal Shirts",
+      "Jackets",
+      "Blazers & Coats",
+    ],
+  },
+  {
+    name: "Kids",
+    subCategories: [
+      "T-shirts",
+      "Shorts",
+      "Pants",
+      "Jackets",
+      "Party Wear",
+      "Footwear",
+      "Innerwear & Thermal",
+      "Track Pants",
+      "Tracksuits",
+    ],
+  },
+  {
+    name: "Footwear",
+    subCategories: [
+      "Men's Footwear",
+      "Women's Footwear",
+      "Kids' Footwear",
+      "Casual Shoes",
+      "Sports Shoes",
+      "Sneakers",
+    ],
+  },
+  {
+    name: "Accessories",
+    subCategories: ["Bags", "Watches", "Sunglasses", "Wallets", "Jewelry"],
+  },
+];
