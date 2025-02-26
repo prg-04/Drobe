@@ -10,7 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { categories } from "@/constants/constants";
+import { categories } from "@/constants";
 
 export function CategoriesCarousel() {
   const plugin = React.useRef(
@@ -26,8 +26,9 @@ export function CategoriesCarousel() {
         plugins={[plugin.current]}
         className="w-full max-w-full h-full mt-4"
         onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}>
-        <CarouselContent >
+        onMouseLeave={plugin.current.reset}
+      >
+        <CarouselContent>
           {categories.map((category, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
@@ -41,7 +42,8 @@ export function CategoriesCarousel() {
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
                       <a
                         href={category.href}
-                        className="text-white text-xl font-semibold p-4 hover:bg-gray-700 transition-colors">
+                        className="text-white text-xl font-semibold p-4 hover:bg-gray-700 transition-colors"
+                      >
                         {category.title}
                       </a>
                     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { hero } from "@/constants/constants";
+import { hero } from "@/constants";
 import anime from "animejs";
 import React, { useEffect, useState, useRef } from "react";
 import { Button } from "../ui/button";
@@ -130,7 +130,8 @@ const Hero = () => {
             zIndex: index === activeIndex ? 1 : 0,
             transform:
               index === activeIndex ? "translateX(0)" : "translateX(100%)",
-          }}>
+          }}
+        >
           <div className="w-1/2 flex flex-col space-y-4 px-16 text-left">
             <h1 className="hero-title text-5xl font-bold text-white opacity-0">
               {item.title}
@@ -139,7 +140,8 @@ const Hero = () => {
               {item.description.split(" ").map((word, i) => (
                 <span
                   key={i}
-                  className="hero-description-word inline-block mr-1 opacity-0">
+                  className="hero-description-word inline-block mr-1 opacity-0"
+                >
                   {word}
                 </span>
               ))}
